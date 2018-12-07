@@ -10,7 +10,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "EMPLOYEE")
-publica class Employee {
+public class Employee {
 
     @Id
     private Long id;
