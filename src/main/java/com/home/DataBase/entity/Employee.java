@@ -19,7 +19,7 @@ public class Employee {
     private String empNo;
 
     @Column(name = "Full_Name", length = 128, nullable = false)
-    private String fillName;
+    private String fullName;
 
     @Temporal(TemporalType.DATE)
     @Column(name = "Hire_Date", nullable = false)
@@ -41,12 +41,12 @@ public class Employee {
         this.empNo = empNo;
     }
 
-    public String getFillName() {
-        return fillName;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setFillName(String fillName) {
-        this.fillName = fillName;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public Date getHireDate() {
@@ -59,6 +59,6 @@ public class Employee {
 
     @Override
     public String toString(){
-        return this.getEmpNo()+", "+ this.getFillName();
+        return this.getEmpNo()+", "+ this.getFullName();
     }
 }
