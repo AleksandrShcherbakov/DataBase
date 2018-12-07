@@ -35,11 +35,11 @@ public class EmployeeRepositoryCustomImpl implements EmployeeRapositoryCustom {
     public Long updateEmployee(Long empId, String fullName, Date hireDate) {
         Employee e = entityManager.find(Employee.class, empId);
         if (e==null){
-            return 0;
+            return 0l;
         }
         e.setFullName(fullName);
         e.setHireDate(hireDate);
         entityManager.flush();
-        return 1;
+        return 1l;
     }
 }
